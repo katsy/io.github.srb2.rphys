@@ -9,6 +9,7 @@ finish-args:
   - --socket=x11
   - --socket=pulseaudio
   - --device=all
+  - --persist=.srb2
 modules:
   - name: game-music-emu
     buildsystem: cmake-ninja
