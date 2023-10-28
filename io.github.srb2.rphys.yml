@@ -96,8 +96,8 @@ modules:
       - type: extra-data
         filename: rphys.zip
         url: https://github.com/katsy/srb2/releases/download/rphys_v8/rphys-windows.zip
-        sha256: 6875ded3fb3e50916a4920d6e9fc70c0803aaa94045cea72fc32db285b5a027f
-        size: 2932889
+        sha256: 1b2364116bc99c06f94186ee82696dadaf4ae20ddae9b2f7c679ce66a61b3ff7
+        size: 2932901
       - type: script
         commands:
           - unzip -o Full.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null && rm
