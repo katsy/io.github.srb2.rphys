@@ -13,12 +13,6 @@
     </p>
   </description>
   <launchable type="desktop-id">io.github.srb2.rphys.desktop</launchable>
-  <screenshots>
-    <screenshot type="default">
-      <image>https://www.srb2.org/wp-content/uploads/srb2-title.png</image>
-      <caption>Title screen</caption>
-    </screenshot>
-  </screenshots>
   <url type="homepage">https://www.github.com/katsy/srb2</url>
   <url type="bugtracker">https://git.do.srb2.org/katsy/SRB2/-/issues</url>
   <url type="vcs-browser">https://git.do.srb2.org/katsy/SRB2</url>
