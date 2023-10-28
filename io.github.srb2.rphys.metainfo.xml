@@ -15,8 +15,8 @@
   <launchable type="desktop-id">io.github.srb2.rphys.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://www.srb2.org/wp-content/uploads/srb2-title.png</image>
-      <caption>Title screen</caption>
+      <image>https://srb2.org/wp-content/uploads/srb2-title.png</image>
+      <caption>title screen</caption>
     </screenshot>
   </screenshots>
   <url type="homepage">https://www.github.com/katsy/srb2</url>
