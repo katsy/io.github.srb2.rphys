@@ -71,8 +71,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/katsy/srb2
-        tag: rphys_v7
-        commit: ccc64e16a9731f30d8e77e27ece7f70dce5dc8f8
+        tag: rphys_v8
+        commit: 12aaecb27e7a20ae06ebb0be73918154964454e6
       - type: script
         commands:
           - export SRB2WADDIR=/app/extra
@@ -95,9 +95,9 @@ modules:
         size: 156054029
       - type: extra-data
         filename: rphys.zip
-        url: https://github.com/katsy/srb2/releases/download/rphys_v7/rphys-windows.zip
-        sha256: af1e39ceae4236b176cb05f18de678adb98cecd15ac7da75424aa44e02764935
-        size: 2995542
+        url: https://github.com/katsy/srb2/releases/download/rphys_v8/rphys-windows.zip
+        sha256: 6875ded3fb3e50916a4920d6e9fc70c0803aaa94045cea72fc32db285b5a027f
+        size: 2932889
       - type: script
         commands:
           - unzip -o Full.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null && rm
