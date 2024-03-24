@@ -84,7 +84,6 @@ modules:
         size: 2932901
       - type: script
         commands:
-          - unzip -o Full.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null && rm
-            Full.zip
+          - unzip -o Full.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null && rm Full.zip
           - unzip -o rphys.zip "*.pk3" > /dev/null && rm rphys.zip
         dest-filename: apply_extra
