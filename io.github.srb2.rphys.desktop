@@ -1,10 +1,10 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=srb2 rphys
+Name=SRB2 Reveries
 Comment=Gameplay overhaul mod for Sonic Robo Blast 2
-TryExec=srb2rphys
-Exec=srb2rphys
+TryExec=srb2reveries
+Exec=srb2reveries
 Icon=io.github.srb2.rphys
 Terminal=false
 Categories=Game;

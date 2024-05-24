@@ -2,7 +2,7 @@ app-id: io.github.srb2.rphys
 runtime: org.freedesktop.Platform
 runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
-command: srb2rphys
+command: srb2reveries
 finish-args:
   - --share=ipc
   - --share=network
@@ -78,7 +78,7 @@ modules:
         sha256: 83b91a351135b63705e49daffa44e7ac3cf3e33b397f56ff347ebb71eda27d4a
         size: 156054029
       - type: extra-data
-        filename: rphys.zip
+        filename: reveries.zip
         url: https://github.com/katsy/srb2/releases/download/rphys_v8/rphys-windows.zip
         sha256: 1b2364116bc99c06f94186ee82696dadaf4ae20ddae9b2f7c679ce66a61b3ff7
         size: 2932901

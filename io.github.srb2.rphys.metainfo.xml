@@ -4,19 +4,35 @@
   <id>io.github.srb2.rphys</id>
   <metadata_license>FSFAP</metadata_license>
   <project_license>GPL-2.0+</project_license>
-  <name>srb2 rphys</name>
+  <name>SRB2 Reveries</name>
   <summary>Gameplay overhaul mod for Sonic Robo Blast 2</summary>
   <description>
     <p>
-      Sonic Robo Blast 2 is a 3D open-source Sonic the Hedgehog fangame built
-      using a modified version of the Doom Legacy port of Doom. This unofficial version is heavily modified to more closely recreate the physics as seen in the classic games SRB2 was inspired by.
+      Sonic Robo Blast 2 is a 3D open-source Sonic the Hedgehog fangame built using the Doom Legacy port of Doom.
+      This unofficial version is heavily modified to more closely recreate the gameplay seen in the classic games SRB2 was inspired by.
     </p>
   </description>
   <launchable type="desktop-id">io.github.srb2.rphys.desktop</launchable>
   <screenshots>
     <screenshot type="default">
       <image>https://srb2.org/wp-content/uploads/srb2-title.png</image>
-      <caption>title screen</caption>
+      <caption>I changed a lot of stuff. The title screen was not one of them.</caption>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/flathub/io.github.srb2.rphys/images/acz1.png</image>
+      <caption>Sonic speeds towards a tunnel in Arid Canyon Zone</caption>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/flathub/io.github.srb2.rphys/images/gfz2.png</image>
+      <caption>Knuckles scales a wall in Greenflower Zone</caption>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/flathub/io.github.srb2.rphys/images/dsz1.png</image>
+      <caption>Tails goes for a swim in Deep Sea Zone</caption>
+    </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/flathub/io.github.srb2.rphys/images/mods.png</image>
+      <caption>Compatible with most mods for vanilla SRB2!</caption>
     </screenshot>
   </screenshots>
   <url type="homepage">https://www.github.com/katsy/srb2</url>
@@ -24,7 +40,7 @@
   <url type="vcs-browser">https://git.do.srb2.org/katsy/SRB2</url>
   <developer_name>katsy (mod), Sonic Team Junior (original game)</developer_name>
   <provides>
-    <binary>srb2rphys</binary>
+    <binary>srb2reveries</binary>
   </provides>
   <releases>
     <release version="v8" date="2023-10-28" />
