@@ -49,7 +49,7 @@ modules:
       - make -C src -j $FLATPAK_BUILDER_N_JOBS NOGME=1 $ARCH_MAKE_ARGS
       - install -D -m 755 -t $FLATPAK_DEST/bin bin/lsdl2srb2
       - install -D -m 644 srb2.png $FLATPAK_DEST/share/icons/hicolor/256x256/apps/$FLATPAK_ID.png
-      - install -D -m 755 rphys.sh $FLATPAK_DEST/bin/srb2rphys
+      - install -D -m 755 reveries.sh $FLATPAK_DEST/bin/srb2reveries
       - install -D -m 644 -t $FLATPAK_DEST/share/applications $FLATPAK_ID.desktop
       - install -D -m 644 -t $FLATPAK_DEST/share/metainfo $FLATPAK_ID.metainfo.xml
     sources:
@@ -61,7 +61,7 @@ modules:
         commands:
           - export SRB2WADDIR=/app/extra
           - lsdl2srb2 "$@"
-        dest-filename: rphys.sh
+        dest-filename: reveries.sh
       - type: file
         path: io.github.srb2.rphys.desktop
       - type: file
@@ -84,6 +84,6 @@ modules:
         size: 2932901
       - type: script
         commands:
-          - unzip -o Full.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null && rm Full.zip
-          - unzip -o rphys.zip "*.pk3" > /dev/null && rm rphys.zip
+          - unzip -o full.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null && rm full.zip
+          - unzip -o reveries.zip "*.pk3" > /dev/null && rm reveries.zip
         dest-filename: apply_extra
