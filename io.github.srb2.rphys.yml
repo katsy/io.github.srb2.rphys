@@ -2,7 +2,7 @@ app-id: io.github.srb2.rphys
 runtime: org.freedesktop.Platform
 runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
-command: srb2rphys
+command: srb2reveries
 finish-args:
   - --share=ipc
   - --share=network
@@ -49,7 +49,7 @@ modules:
       - make -C src -j $FLATPAK_BUILDER_N_JOBS NOGME=1 $ARCH_MAKE_ARGS
       - install -D -m 755 -t $FLATPAK_DEST/bin bin/lsdl2srb2
       - install -D -m 644 srb2.png $FLATPAK_DEST/share/icons/hicolor/256x256/apps/$FLATPAK_ID.png
-      - install -D -m 755 rphys.sh $FLATPAK_DEST/bin/srb2rphys
+      - install -D -m 755 reveries.sh $FLATPAK_DEST/bin/srb2reveries
       - install -D -m 644 -t $FLATPAK_DEST/share/applications $FLATPAK_ID.desktop
       - install -D -m 644 -t $FLATPAK_DEST/share/metainfo $FLATPAK_ID.metainfo.xml
     sources:
@@ -61,7 +61,7 @@ modules:
         commands:
           - export SRB2WADDIR=/app/extra
           - lsdl2srb2 "$@"
-        dest-filename: rphys.sh
+        dest-filename: reveries.sh
       - type: file
         path: io.github.srb2.rphys.desktop
       - type: file
