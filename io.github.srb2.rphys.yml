@@ -35,6 +35,22 @@ modules:
           stable-only: true
           url-template: https://lib.openmpt.org/files/libopenmpt/src/libopenmpt-$version+release.autotools.tar.gz
 
+  - name: miniupnpc
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DUPNPC_BUILD_SAMPLE=OFF
+      - -DUPNPC_BUILD_SHARED=ON
+      - -DUPNPC_BUILD_TESTS=OFF
+    sources:
+      - type: git
+        url: https://github.com/miniupnp/miniupnp
+        tag: v2.3.6
+        commit: 7f189988a0decca0ab7da89000051ab91751f70d
+        x-checker-data:
+          type: git
+          tag-pattern: ^(v[\d.]+)$
+
   - name: srb2
     buildsystem: simple
     build-options:
@@ -46,7 +62,7 @@ modules:
           env:
             ARCH_MAKE_ARGS: LINUX64=1 X86_64=1
     build-commands:
-      - make -C src -j $FLATPAK_BUILDER_N_JOBS NOGME=1 NOUPNP=1 $ARCH_MAKE_ARGS
+      - make -C src -j $FLATPAK_BUILDER_N_JOBS NOGME=1 $ARCH_MAKE_ARGS
       - install -D -m 755 -t $FLATPAK_DEST/bin bin/lsdl2srb2
       - install -D -m 644 srb2.png $FLATPAK_DEST/share/icons/hicolor/256x256/apps/$FLATPAK_ID.png
       - install -D -m 755 reveries.sh $FLATPAK_DEST/bin/srb2reveries
