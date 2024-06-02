@@ -18,19 +18,19 @@
       <image>https://srb2.org/wp-content/uploads/srb2-title.png</image>
       <caption>I changed a lot of stuff. The title screen was not one of them.</caption>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image>https://raw.githubusercontent.com/flathub/io.github.srb2.rphys/images/acz1.png</image>
       <caption>Sonic speeds towards a tunnel in Arid Canyon Zone</caption>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image>https://raw.githubusercontent.com/flathub/io.github.srb2.rphys/images/gfz2.png</image>
       <caption>Knuckles scales a wall in Greenflower Zone</caption>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image>https://raw.githubusercontent.com/flathub/io.github.srb2.rphys/images/dsz1.png</image>
       <caption>Tails goes for a swim in Deep Sea Zone</caption>
     </screenshot>
-    <screenshot type="default">
+    <screenshot>
       <image>https://raw.githubusercontent.com/flathub/io.github.srb2.rphys/images/mods.png</image>
       <caption>Compatible with most mods for vanilla SRB2!</caption>
     </screenshot>
@@ -43,6 +43,7 @@
     <binary>srb2reveries</binary>
   </provides>
   <releases>
+    <release version="v9" date="2024-06-02" />
     <release version="v8" date="2023-10-28" />
     <release version="v7" date="2023-09-15" />
     <release version="v6" date="2023-07-19" />
