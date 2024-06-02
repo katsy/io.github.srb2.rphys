@@ -45,11 +45,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/miniupnp/miniupnp
-        tag: v2.3.6
+        tag: miniupnpd_2_3_6
         commit: 7f189988a0decca0ab7da89000051ab91751f70d
         x-checker-data:
           type: git
-          tag-pattern: ^(v[\d.]+)$
+          tag-pattern: ^(miniupnpd[\d_]+)$
 
   - name: srb2
     buildsystem: simple
