@@ -44,12 +44,12 @@ modules:
       - -DUPNPC_BUILD_TESTS=OFF
     sources:
       - type: git
-        url: https://github.com/miniupnp/miniupnp
-        tag: miniupnpd_2_3_6
-        commit: 7f189988a0decca0ab7da89000051ab91751f70d
+        url: https://salsa.debian.org/miniupnp-team/miniupnpc.git
+        commit: 1b7d05065e1cfb7c151c014b4c7a3c715d85aa46
+        tag: debian/2.2.5-1
         x-checker-data:
           type: git
-          tag-pattern: ^(miniupnpd[\d_]+)$
+          tag-pattern: ^debian\/(\d.+)$
 
   - name: srb2
     buildsystem: simple
