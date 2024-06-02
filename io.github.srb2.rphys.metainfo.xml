@@ -16,7 +16,7 @@
   <screenshots>
     <screenshot type="default">
       <image>https://srb2.org/wp-content/uploads/srb2-title.png</image>
-      <caption>I changed a lot of stuff. The title screen was not one of them.</caption>
+      <caption>I changed a lot of things. The title screen was not one of them.</caption>
     </screenshot>
     <screenshot>
       <image>https://raw.githubusercontent.com/flathub/io.github.srb2.rphys/images/acz1.png</image>
@@ -35,10 +35,10 @@
       <caption>Compatible with most mods for vanilla SRB2!</caption>
     </screenshot>
   </screenshots>
-  <url type="homepage">https://www.github.com/katsy/srb2</url>
-  <url type="bugtracker">https://git.do.srb2.org/katsy/SRB2/-/issues</url>
-  <url type="vcs-browser">https://git.do.srb2.org/katsy/SRB2</url>
-  <developer_name>katsy (mod), Sonic Team Junior (original game)</developer_name>
+  <url type="homepage">https://www.github.com/hazepastel/srb2</url>
+  <url type="bugtracker">https://git.do.srb2.org/pastel/SRB2/-/issues</url>
+  <url type="vcs-browser">https://git.do.srb2.org/pastel/SRB2</url>
+  <developer_name>pastel (Reveries), Sonic Team Junior (SRB2)</developer_name>
   <provides>
     <binary>srb2reveries</binary>
   </provides>
