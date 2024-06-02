@@ -54,7 +54,7 @@ modules:
       - install -D -m 644 -t $FLATPAK_DEST/share/metainfo $FLATPAK_ID.metainfo.xml
     sources:
       - type: git
-        url: https://github.com/katsy/srb2
+        url: https://github.com/hazepastel/srb2
         tag: rphys_v8
         commit: 12aaecb27e7a20ae06ebb0be73918154964454e6
       - type: script
@@ -79,9 +79,9 @@ modules:
         size: 156054029
       - type: extra-data
         filename: reveries.zip
-        url: https://github.com/katsy/srb2/releases/download/rphys_v8/rphys-windows.zip
-        sha256: 1b2364116bc99c06f94186ee82696dadaf4ae20ddae9b2f7c679ce66a61b3ff7
-        size: 2932901
+        url: https://github.com/hazepastel/srb2/releases/download/v9/reveries-windows.zip
+        sha256: d46df2c98a76b50053fdc36c671d729de2f57535ee8fcf9ba32d37dd527b362e
+        size: 3077652
       - type: script
         commands:
           - unzip -o full.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null && rm full.zip
