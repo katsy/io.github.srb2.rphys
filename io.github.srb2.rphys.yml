@@ -45,8 +45,8 @@ modules:
     sources:
       - type: git
         url: https://salsa.debian.org/miniupnp-team/miniupnpc.git
-        commit: 1b7d05065e1cfb7c151c014b4c7a3c715d85aa46
-        tag: debian/2.2.5-1
+        commit: d73510e9216a7bed8082f64f22fa43737244ac09
+        tag: debian/2.2.6-1
         x-checker-data:
           type: git
           tag-pattern: ^debian\/(\d.+)$
@@ -100,6 +100,7 @@ modules:
         size: 3077652
       - type: script
         commands:
-          - unzip -o full.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null && rm full.zip
+          - unzip -o full.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null && rm
+            full.zip
           - unzip -o reveries.zip "*.pk3" > /dev/null && rm reveries.zip
         dest-filename: apply_extra
