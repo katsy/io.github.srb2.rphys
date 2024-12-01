@@ -38,11 +38,12 @@
   <url type="homepage">https://www.github.com/hazepastel/srb2</url>
   <url type="bugtracker">https://git.do.srb2.org/pastel/SRB2/-/issues</url>
   <url type="vcs-browser">https://git.do.srb2.org/pastel/SRB2</url>
-  <developer_name>pastel (Reveries), Sonic Team Junior (SRB2)</developer_name>
+  <developer_name>hazepastel (Reveries), Sonic Team Junior (SRB2)</developer_name>
   <provides>
     <binary>srb2reveries</binary>
   </provides>
   <releases>
+    <release version="f1" date="2024-12-01" />
     <release version="v9" date="2024-06-02" />
     <release version="v8" date="2023-10-28" />
     <release version="v7" date="2023-09-15" />

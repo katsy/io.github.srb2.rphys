@@ -1,6 +1,6 @@
 app-id: io.github.srb2.rphys
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: srb2reveries
 finish-args:
@@ -71,8 +71,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/hazepastel/srb2
-        tag: v9
-        commit: f5dd220528d28eb257c6cfb2ea6c0dfe3d03a270
+        tag: f1
+        commit: b4723f878d23429123ccd56a19ad9d975ab6c0b7
       - type: script
         commands:
           - export SRB2WADDIR=/app/extra
@@ -89,17 +89,17 @@ modules:
       - install -t $FLATPAK_DEST/bin apply_extra
     sources:
       - type: extra-data
-        filename: full.zip
-        url: https://github.com/STJr/SRB2/releases/download/SRB2_release_2.2.13/SRB2-v2213-Full.zip
-        sha256: 83b91a351135b63705e49daffa44e7ac3cf3e33b397f56ff347ebb71eda27d4a
-        size: 156054029
+        filename: srb2assets.zip
+        url: https://github.com/hazepastel/srb2/releases/download/f1/separate_folder_assets_F1.zip
+        sha256: 24a36a176e7c010f85f22dbed6a6a3cc2b49615cbae892bbde0c2fdf11f79c2b
+        size: 153461977
       - type: extra-data
         filename: reveries.zip
-        url: https://github.com/hazepastel/srb2/releases/download/v9/reveries-windows.zip
-        sha256: d46df2c98a76b50053fdc36c671d729de2f57535ee8fcf9ba32d37dd527b362e
-        size: 3077652
+        url: https://github.com/hazepastel/srb2/releases/download/f1/reveries_windows_F1.zip
+        sha256: d6dcdfe0d89bf22538e1f880a29395e671c2e14cb1500499f63598cd898bd656
+        size: 329232
       - type: script
         commands:
-          - unzip -o full.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null && rm full.zip
+          - unzip -o full.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null && rm srb2assets.zip
           - unzip -o reveries.zip "*.pk3" > /dev/null && rm reveries.zip
         dest-filename: apply_extra
