@@ -100,6 +100,7 @@ modules:
         size: 3219262
       - type: script
         commands:
-          - unzip -o srb2assets.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null && rm srb2assets.zip
+          - unzip -o srb2assets.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null
+            && rm srb2assets.zip
           - unzip -o reveries.zip "*.pk3" > /dev/null && rm reveries.zip
         dest-filename: apply_extra
