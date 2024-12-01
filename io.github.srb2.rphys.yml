@@ -72,7 +72,7 @@ modules:
       - type: git
         url: https://github.com/hazepastel/srb2
         tag: f1
-        commit: b4723f878d23429123ccd56a19ad9d975ab6c0b7
+        commit: ee79f544d1fbe0fbdd0c63543f95cdd2aa251f21
       - type: script
         commands:
           - export SRB2WADDIR=/app/extra
@@ -96,8 +96,8 @@ modules:
       - type: extra-data
         filename: reveries.zip
         url: https://github.com/hazepastel/srb2/releases/download/f1/reveries_windows_F1.zip
-        sha256: d6dcdfe0d89bf22538e1f880a29395e671c2e14cb1500499f63598cd898bd656
-        size: 3219232
+        sha256: 250fbe974f690940876d464c798b41920a1ed40c8fd5d6da454eeb5ce064d8c7
+        size: 3219262
       - type: script
         commands:
           - unzip -o srb2assets.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null
