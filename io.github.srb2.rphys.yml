@@ -64,6 +64,7 @@ modules:
     build-commands:
       - make -C src -j $FLATPAK_BUILDER_N_JOBS NOGME=1 $ARCH_MAKE_ARGS
       - install -D -m 755 -t $FLATPAK_DEST/bin bin/lsdl2srb2
+      - install -D -m 755 -t $FLATPAK_DEST/bin reveries.pk3
       - install -D -m 644 srb2.png $FLATPAK_DEST/share/icons/hicolor/256x256/apps/$FLATPAK_ID.png
       - install -D -m 755 reveries.sh $FLATPAK_DEST/bin/srb2reveries
       - install -D -m 644 -t $FLATPAK_DEST/share/applications $FLATPAK_ID.desktop
@@ -71,8 +72,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/hazepastel/srb2
-        tag: f4
-        commit: 62c90bf80839371b73e866763e12ca05b65c191b
+        tag: f4a
+        commit: 3e236930d8b8041d225b080bbaa2f6ca48748947
       - type: script
         commands:
           - export SRB2WADDIR=/app/bin
@@ -83,13 +84,12 @@ modules:
       - type: file
         path: io.github.srb2.rphys.metainfo.xml
 
-
   - name: srb2assets
     buildsystem: simple
     build-commands:
       - cp -r * $FLATPAK_DEST/bin
     sources:
       - type: git
-        url: https://github.com/hazepastel/rvrassets
-        tag: f4
-        commit: e6b60934dc780522dcabdc52a4de689c56cbcdc8
+        url: https://git.do.srb2.org/STJr/srb2assets-public
+        tag: SRB2_release_2.2.15
+        commit: f9651218133f1001df39265bb53ac80ff19762a4
