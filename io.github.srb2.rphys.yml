@@ -71,11 +71,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/hazepastel/srb2
-        tag: f3a
-        commit: d408b10360ea47bee18bee2d73e845547dc44883
+        tag: f4
+        commit: 62c90bf80839371b73e866763e12ca05b65c191b
       - type: script
         commands:
-          - export SRB2WADDIR=/app/extra
+          - export SRB2WADDIR=/app/bin
           - lsdl2srb2 "$@"
         dest-filename: reveries.sh
       - type: file
@@ -83,24 +83,13 @@ modules:
       - type: file
         path: io.github.srb2.rphys.metainfo.xml
 
-  - name: srb2-assets
+
+  - name: srb2assets
     buildsystem: simple
     build-commands:
-      - install -t $FLATPAK_DEST/bin apply_extra
+      - cp -r * $FLATPAK_DEST/bin
     sources:
-      - type: extra-data
-        filename: srb2assets.zip
-        url: https://github.com/hazepastel/srb2/releases/download/f3a/separate_folder_assets_F1.zip
-        sha256: 24a36a176e7c010f85f22dbed6a6a3cc2b49615cbae892bbde0c2fdf11f79c2b
-        size: 153461977
-      - type: extra-data
-        filename: reveries.zip
-        url: https://github.com/hazepastel/srb2/releases/download/f3a/reveries_windows_F3A.zip
-        sha256: 066b3d4fec52b726e368dda8ec9376cecc8d8b7ca9df310e8ad5162af6503b01
-        size: 3225466
-      - type: script
-        commands:
-          - unzip -o srb2assets.zip "*.dta" "*.pk3" "*.dat" "models/*" > /dev/null
-            && rm srb2assets.zip
-          - unzip -o reveries.zip "*.pk3" > /dev/null && rm reveries.zip
-        dest-filename: apply_extra
+      - type: git
+        url: https://github.com/hazepastel/rvrassets
+        tag: f4
+        commit: e6b60934dc780522dcabdc52a4de689c56cbcdc8
