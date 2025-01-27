@@ -72,8 +72,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/hazepastel/srb2
-        tag: f4
-        commit: 62c90bf80839371b73e866763e12ca05b65c191b
+        tag: f4a
+        commit: 3e236930d8b8041d225b080bbaa2f6ca48748947
       - type: script
         commands:
           - export SRB2WADDIR=/app/bin
