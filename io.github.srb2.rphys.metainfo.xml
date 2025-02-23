@@ -37,8 +37,8 @@
   </screenshots>
   <url type="homepage">https://codeberg.org/lavla/cherry</url>
   <url type="bugtracker">https://codeberg.org/lavla/cherry/issues</url>
-  <url type="vcs-browser">https://codeberg.org/lavla/</url>
-  <developer_name>candelavla (Cherry/Reveries), Sonic Team Junior (SRB2)</developer_name>
+  <url type="vcs-browser">https://codeberg.org/lavla/cherry</url>
+  <developer_name>candelavla (Reveries), Sonic Team Junior (SRB2)</developer_name>
   <provides>
     <binary>srb2reveries</binary>
   </provides>
