@@ -9,7 +9,7 @@
   <description>
     <p>
       Sonic Robo Blast 2 is a 3D open-source Sonic the Hedgehog fangame built using the Doom Legacy port of Doom.
-      Reveries is one of the two main flavours of the SRB2 Cherry project, featuring heavy modifications to more closely recreate the gameplay seen in the classic games SRB2 was inspired by on top the SRB2 Cherry base which adds fixes and other quality of life features such as the shield button and improved gamepad support.
+      Reveries is one of the two main flavours of the SRB2 Cherry project, featuring heavy modifications to more closely recreate the gameplay seen in the classic games SRB2 was inspired by on top of the SRB2 Cherry base which adds fixes and other quality of life features such as the shield button and improved gamepad support.
     </p>
   </description>
   <launchable type="desktop-id">io.github.srb2.rphys.desktop</launchable>
