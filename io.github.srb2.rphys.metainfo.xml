@@ -9,7 +9,7 @@
   <description>
     <p>
       Sonic Robo Blast 2 is a 3D open-source Sonic the Hedgehog fangame built using the Doom Legacy port of Doom.
-      This unofficial version is heavily modified to more closely recreate the gameplay seen in the classic games SRB2 was inspired by.
+      Reveries is one of the two main flavours of the SRB2 Cherry project, featuring heavy modifications to more closely recreate the gameplay seen in the classic games SRB2 was inspired by on top the SRB2 Cherry base which adds fixes and other quality of life features such as the shield button and improved gamepad support.
     </p>
   </description>
   <launchable type="desktop-id">io.github.srb2.rphys.desktop</launchable>
@@ -35,10 +35,10 @@
       <caption>Compatible with most mods for vanilla SRB2!</caption>
     </screenshot>
   </screenshots>
-  <url type="homepage">https://www.github.com/hazepastel/srb2</url>
-  <url type="bugtracker">https://git.do.srb2.org/pastel/SRB2/-/issues</url>
-  <url type="vcs-browser">https://git.do.srb2.org/pastel/SRB2</url>
-  <developer_name>hazepastel (Reveries), Sonic Team Junior (SRB2)</developer_name>
+  <url type="homepage">https://codeberg.org/lavla/cherry</url>
+  <url type="bugtracker">https://codeberg.org/lavla/cherry/issues</url>
+  <url type="vcs-browser">https://codeberg.org/lavla/</url>
+  <developer_name>candelavla (Cherry/Reveries), Sonic Team Junior (SRB2)</developer_name>
   <provides>
     <binary>srb2reveries</binary>
   </provides>
@@ -53,6 +53,11 @@
     <release version="b8" date="2023-10-28" />
     <release version="b7" date="2023-09-15" />
     <release version="b6" date="2023-07-19" />
+    <release version="b5" date="2023-06-30" />
+    <release version="b4" date="2022-10-15" />
+    <release version="b3" date="2022-06-24" />
+    <release version="b2" date="2022-06-20" />
+    <release version="b1" date="2022-05-17" />
   </releases>
   <content_rating type="oars-1.1">
     <content_attribute id="violence-cartoon">moderate</content_attribute>
